@@ -11,7 +11,7 @@ int main()
     int n;
     cin>>n;
     vector<int> prime_factors;
-    for(int i=2; i<n; i++)
+    for(int i=2; i*i<n; i++)
     {
         while(n%i==0)
         {
