@@ -1,0 +1,51 @@
+                                                  1     1
+                                              1      2      1
+                                            1    3   2    3    1
+                                         1  4  3  5  2  5  3  4  1
+                             1  5  4  7  3  8  5  7  2  7  5  8  3  7  4  5  1
+1  6  5  9  4  11  7  10  3  11  8  13  5  12  7  9  2  9  7  12  5  13  8  11  3  10  7  11  4  9  5  6  1
+
+Let's say by this we get an infinite series. In that series what is the frequency of 1,2,3,4...
+freq[1] = 2
+freq[2] = 1
+freq[3] = 2
+freq[4] = 2
+freq[5] = 4
+freq[6] = 2
+freq[7] = 6
+
+There is a pattern here that, in this series the frequncy of x, freq[x] is the count of the numbers
+from 1 to x inclusive which are coprime to x.
+
+freq[2] = from 1 to 2 coprimes = 1
+freq[3] = from 1 to 3 coprimes = 1,2
+freq[4] = from 1 to 4 coprimes = 1,3
+freq[5] = from 1 to 5 coprimes = 1,2,3,4
+freq[6] = from 1 to 6 coprimes = 1,5
+freq[7] = from 1 to 7 coprimes = 1,2,3,4,5,6
+.
+freq[16] = from 1 to 16 coprimes = 1,3,5,7,9,11,13,15
+we call this the totient function, also called the phi function. 
+
+if, p is a prime number then,                 phi(p)   = p-1;
+                                              phi(p^2) = p^2 - P
+                                              phi(p^3) = p^3 - p^2
+                                              phi(p^e) = p^e - p^e-1
+
+if, p1 and p2 are both prime numbers then,    phi(p1 * p2)       = phi(p1)    * phi(p2)
+                                              phi(p1^e1 * p2^e2) = phi(p1^e1) * phi(p2^e2)
+
+Simplyfying the equation more,
+
+if a Number is N = p1^e1 * p2^e2 * p3^e3
+
+phi(p1^e1 * p2^e2 * p3^e3) = phi(p1^e1) * phi(p2^e2) * phi(p3^e3)
+                           = {p1^e1 - p1^e1-1} * {p2^e2 - p2^e2-1} * {p3^e3 - p3^e3-1}
+                           = p1^e1(1 - 1/p1) * p2^e2(1 - 1/p2) * p3^e3(1 - 1/p3)
+                           = (p1^e1 * p2^e2 * p3^e3) * (1 - 1/p1) * (1 - 1/p2) * (1 - 1/p3)
+                           = N * (1 - 1/p1) * (1 - 1/p2) * (1 - 1/p3)
+ 
+
+
+
+
