@@ -1,0 +1,8 @@
+### Finding the number of divisor of an integer n = (1 + p) x (1 + q) x (1 + r)
+																								Here, p,q,r are the power of prime divisors.
+				180 = 2 x 2 x 3 x 3 x 5
+						= 2 ^ 2 x 3 ^ 2 x 5
+		Number of divisors of 180 = (2+1) x (2+1) x (1+1)
+															= 3 x 3 x 2
+															= 18
+        
