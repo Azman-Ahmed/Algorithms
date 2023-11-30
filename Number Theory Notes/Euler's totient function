@@ -48,7 +48,7 @@ phi(p1^e1 * p2^e2 * p3^e3) = phi(p1^e1) * phi(p2^e2) * phi(p3^e3)
                            = (p1^e1 * p2^e2 * p3^e3) * (1 - 1/p1) * (1 - 1/p2) * (1 - 1/p3)
                            = N * (1 - 1/p1) * (1 - 1/p2) * (1 - 1/p3)
 
-Divisor Sum Property of Totient Function:
+### Divisor Sum Property of Totient Function:
 Divisors of 10 = 1,2,5,10
 Now, phi(1) + phi(2) + phi(5) + phi(10) = 1 + 1 + 4 + 4 = 10
  
