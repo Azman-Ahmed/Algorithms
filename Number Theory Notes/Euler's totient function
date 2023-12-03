@@ -68,5 +68,8 @@ Now, phi(1) + phi(2) + phi(5) + phi(10) = 1 + 1 + 4 + 4 = 10
 
 ### GCD Sum:
     Given an integer n (1 ≤ n ≤ 2^31), you are to calculate ∑gcd(i,n) for all 1 ≤ i ≤ n
-
+    n
+    ∑   ( n / i ) * phi(i)
+    i=1
+### 
 
