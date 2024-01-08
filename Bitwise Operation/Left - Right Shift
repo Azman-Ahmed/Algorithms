@@ -1,1 +1,47 @@
-rem
+*** conversion from int to 32 bit binary,
+14 = (00000.....1110)
+### bitset<32> x(n) ///converts a decimal number to an array of boolean
+
+*** NOT Operation
+~(14) = ~(000...1110) = (111...0001) = -15
+### ~14
+
+*** OR Operation
+5 = 000...011
+4 = 000...010
+--------------
+5 = 000...011
+### 5 | 4
+
+*** AND Operation
+5 = 000...011
+4 = 000...010
+--------------
+4 = 000...010
+### 5 & 4
+
+*** XOR Operation (Details in XOR Special Property file)
+
+***Left Shift
+It is a binary operator that takes two numbers a and b, left shifts the bits of a to the left b times.
+
+5 = 000...000101
+5<<1 = 000...001010 = 10
+5<<2 = 000...010100 = 20
+5<<3 = 000...101000 = 40
+
+an interesting property here is that every time we left a is multipled with 2,
+a>>b = a * 2^b
+
+***Right Shift
+It is a binary operator that takes two numbers a and b, Right shifts the bits of a to the left b times.
+
+5 = 000...000101
+5>>1 = 000...010 = 2
+5>>2 = 000...001 = 1
+5>>3 = 000...000 = 0
+
+an interesting property here is that every time we left a is divided by 2,
+a<<b = a / 2^b
+
+
