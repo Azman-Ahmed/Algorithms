@@ -1,0 +1,25 @@
+
+2^0 = 1
+2^1 = 2
+2^2 = 4
+2^3 = 8
+2^4 = 16
+2^5 = 32
+.
+.
+.
+2^10 = 10^3
+2^20 = 10^6
+2^30 = 10^9
+2^40 = 10^12
+2^50 = 10^15
+2^60 = 10^18
+2^70 = 10^21
+2^80 = 10^24
+2^90 = 10^27
+2^100 = 10^30
+
+total number of subarray of an array size of n = n*(n-1)/2
+total number of sub sequence of an array size of n = 2^n
+total number of sub set of an array size of n = 2^n
+
